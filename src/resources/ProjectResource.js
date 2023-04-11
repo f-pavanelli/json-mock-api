@@ -6,7 +6,7 @@ module.exports = {
     resource: Project,
     options: {
         parent: {
-            icon: 'User'
+            icon: 'Roadmap'
         },
         properties: {
             projectName: {
