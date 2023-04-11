@@ -8,6 +8,7 @@ const AdminJSMongoose = require('@adminjs/mongoose')
 const express = require('express')
 
 const ProjectResource = require('./resources/ProjectResource')
+const ApiResource = require('./resources/ApiResource')
 
 AdminJS.registerAdapter(AdminJSMongoose)
 
@@ -16,7 +17,7 @@ const app = express()
 const adminJS = new AdminJS({
     databases: [],
     rootPath: "/admin",
-    resources: [ProjectResource]
+    resources: [ProjectResource, ApiResource]
 })
 
 const router = AdminJSExpress.buildRouter(adminJS)
