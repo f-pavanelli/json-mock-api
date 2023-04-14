@@ -17,6 +17,7 @@ module.exports = {
             },
             response: {
                 position: 4,
+                components: { edit: AdminJS.bundle('../components/CustomJsonEditor') }
             },
             statusCode: {
                 position: 5,
