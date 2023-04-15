@@ -21,7 +21,7 @@ const adminJS = new AdminJS({
     branding: {
         companyName: 'Mock APIs',
         logo: false,
-        softwareBrothers: false,
+        withMadeWithLove: false,
     }
 })
 
