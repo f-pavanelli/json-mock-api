@@ -19,14 +19,16 @@ module.exports = {
             },
             response: {
                 position: 5,
-                components: { edit: AdminJS.bundle('../components/ResponseJsonEditor'), show: AdminJS.bundle('../components/ResponseJsonEditor') }
+                components: { edit: AdminJS.bundle('../components/ResponseJsonEditor'), show: AdminJS.bundle('../components/ResponseJsonEditor') },
+                isVisible: { list: false }
             },
             statusCode: {
                 position: 6,
             },
             requestIdentifier: {
                 position: 7,
-                components: { edit: AdminJS.bundle('../components/IdentifierJsonEditor'), show: AdminJS.bundle('../components/IdentifierJsonEditor') }
+                components: { edit: AdminJS.bundle('../components/IdentifierJsonEditor'), show: AdminJS.bundle('../components/IdentifierJsonEditor') },
+                isVisible: { list: false }
             },
             createdAt: {
                 position: 8,
