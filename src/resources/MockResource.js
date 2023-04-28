@@ -1,5 +1,4 @@
 const AdminJS = require('adminjs')
-
 const Mock = require('../models/Mock')
 
 module.exports = {
@@ -15,19 +14,19 @@ module.exports = {
             description: {
                 position: 3,
             },
-            response: {
+            api: {
                 position: 4,
-                components: { edit: AdminJS.bundle('../components/CustomJsonEditor') }
+            },
+            response: {
+                position: 5,
+                components: { edit: AdminJS.bundle('../components/ResponseJsonEditor'), show: AdminJS.bundle('../components/ResponseJsonEditor') }
             },
             statusCode: {
-                position: 5,
+                position: 6,
             },
             requestIdentifier: {
-                position: 6,
-                type: 'key-value'
-            },
-            api: {
                 position: 7,
+                components: { edit: AdminJS.bundle('../components/IdentifierJsonEditor'), show: AdminJS.bundle('../components/IdentifierJsonEditor') }
             },
             createdAt: {
                 position: 8,
