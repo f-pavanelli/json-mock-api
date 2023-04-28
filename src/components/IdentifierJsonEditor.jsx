@@ -5,7 +5,6 @@ import parseObject from '../utils/parseObject'
 const IdentifierJsonEditor = (props) => {
     const { record, where } = props
     const apiId = record.params?.api
-
     const placeholder = createPlaceholder(apiId, record, where)
 
     record.params.requestIdentifier = placeholder
@@ -34,7 +33,6 @@ const IdentifierJsonEditor = (props) => {
                 waitAfterKeyPress={1200}
                 onChange={(data) => {
                     try {
-                        //console.log('onchange')
                         record.params.requestIdentifier = JSON.parse(data.json)
                     } catch (e) {
                         console.error("Json incorreto: " + e.message)
@@ -81,7 +79,7 @@ const createPlaceholder = (apiId = null, record, where) => {
         return obj
     }
 
-    obj.exemplo = 'exemple'
+    obj.example1 = 'example1'
     return obj
 
 }
