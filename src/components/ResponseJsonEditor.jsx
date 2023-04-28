@@ -17,6 +17,7 @@ const ResponseJsonEditor = (props) => {
             <JSONInput
                 id='a_unique_id'
                 placeholder={placeholder}
+                viewOnly={where == "show" ? true : false}
                 colors={{
                     default: "#000000",
                     background: "#FCFDFD",
