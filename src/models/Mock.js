@@ -17,9 +17,13 @@ const MockSchema = new mongoose.Schema({
         trim: true
     },
     statusCode: {
-        type: String,
+        type: Number,
         required: true,
-        trim: true
+        trim: true,
+        validate: {
+            validator: Number.isInteger,
+            message: '{VALUE} is not an integer value'
+        }
     },
     requestIdentifier: {
         type: Object,
