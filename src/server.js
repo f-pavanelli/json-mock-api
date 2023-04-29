@@ -17,7 +17,12 @@ const app = express()
 const adminJS = new AdminJS({
     databases: [],
     rootPath: "/admin",
-    resources: [ProjectResource, ApiResource]
+    resources: [ProjectResource, ApiResource],
+    branding: {
+        companyName: 'Mock APIs',
+        logo: false,
+        withMadeWithLove: false,
+    }
 })
 
 const router = AdminJSExpress.buildRouter(adminJS)
