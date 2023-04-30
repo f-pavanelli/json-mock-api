@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const CustomUrl = (props) => {
     const { record } = props;
-    const url = record?.params?.project && record?.params?.apiName ? `${record?.params?.project}-${record?.params?.apiName}` : 'URL da API mock'
+    const url = record?.params?.project && record?.params?.apiName ? `http://localhost:5000/findMock/${record?.params?.project}-${record?.params?.apiName}` : 'URL da API mock'
     record.params.url = url
     return (
 
