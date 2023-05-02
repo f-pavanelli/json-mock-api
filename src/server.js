@@ -9,6 +9,7 @@ const express = require('express')
 
 const ProjectResource = require('./resources/ProjectResource')
 const ApiResource = require('./resources/ApiResource')
+const MockResource = require('./resources/MockResource')
 
 AdminJS.registerAdapter(AdminJSMongoose)
 
@@ -17,7 +18,7 @@ const app = express()
 const adminJS = new AdminJS({
     databases: [],
     rootPath: "/admin",
-    resources: [ProjectResource, ApiResource],
+    resources: [ProjectResource, ApiResource, MockResource],
     branding: {
         companyName: 'Mock APIs',
         logo: false,
