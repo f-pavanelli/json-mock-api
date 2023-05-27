@@ -17,17 +17,18 @@ module.exports = {
             api: {
                 position: 4,
             },
-            response: {
-                position: 5,
-                components: { edit: AdminJS.bundle('../components/ResponseJsonEditor'), show: AdminJS.bundle('../components/ResponseJsonEditor') },
-            },
             statusCode: {
-                position: 6,
+                position: 5,
             },
             requestIdentifier: {
-                position: 7,
+                position: 6,
                 components: { edit: AdminJS.bundle('../components/IdentifierJsonEditor'), show: AdminJS.bundle('../components/IdentifierJsonEditor') },
             },
+            response: {
+                position: 7,
+                components: { edit: AdminJS.bundle('../components/ResponseJsonEditor'), show: AdminJS.bundle('../components/ResponseJsonEditor') },
+            },
+
             createdAt: {
                 position: 8,
                 isVisible: { list: false, show: false, edit: false }
