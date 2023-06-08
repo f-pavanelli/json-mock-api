@@ -31,10 +31,12 @@ const ResponseJsonEditor = (props) => {
                 }}
                 locale={locale}
                 height='300px'
-                waitAfterKeyPress={1500}
+                waitAfterKeyPress={1200}
                 onChange={(data) => {
                     try {
+                        delete record.params.response
                         record.params.response = JSON.parse(data.json)
+                        console.log(record.params.response)
                     } catch (e) {
                         console.log("Json incorreto: " + e.message)
                     }

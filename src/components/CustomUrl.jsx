@@ -2,9 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const CustomUrl = (props) => {
-    const { record } = props;
+    const { record, where } = props;
     const url = record?.params?.project && record?.params?.apiName ? `http://localhost:5000/findMock/${record?.params?.project}-${record?.params?.apiName}` : 'URL da API mock'
-    record.params.url = url
+    record.params.url = `${record?.params?.project}-${record?.params?.apiName}`
+
+    if (where == "show") {
+        return url
+    }
+
     return (
 
         <div className="form-group__FormGroup-sc-dpyqjh-0 frCjYo">

@@ -27,7 +27,7 @@ module.exports = {
             },
             url: {
                 position: 7,
-                components: { edit: AdminJS.bundle('../components/CustomUrl') }
+                components: { edit: AdminJS.bundle('../components/CustomUrl'), show: AdminJS.bundle('../components/CustomUrl') }
             },
             createdAt: {
                 position: 8,
